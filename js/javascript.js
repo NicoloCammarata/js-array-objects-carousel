@@ -87,8 +87,38 @@ rightButton.addEventListener('click', function () {
 
 
 
+const leftButton = document.getElementById('button-left')
+
+
+leftButton.addEventListener('click', function () {
+
+    console.log(counter)
+
+
+    if (counter > 0) {
+        allLi[counter].classList.add("d-none");
+    
+        counter --;
+    
+        allLi[counter].classList.remove("d-none");
+    
+        
+        
+    }
+    else if(counter == 0) {
+        allLi[counter].classList.add("d-none");
+    
+        counter = 4;
+    
+        allLi[counter].classList.remove("d-none");
+    
+        
+        
+    }
+
+    
 
 
 
-
+});
 
