@@ -25,7 +25,7 @@ aside{
 
 }
 
-#button-left{
+.fake-button{
     position: absolute;
     z-index: 1;
     left: 25%;
@@ -39,6 +39,12 @@ aside{
     transform: translateX(-50%);
     bottom: 0px;
 }
+
+#special-button:hover{
+    border: 5px white solid;
+    
+}
+
 
 li > span, li > h2{
     color: #ffffff;
@@ -60,3 +66,13 @@ li{
     position: relative;
 }
 
+
+
+
+
+
+
+.img-1:hover{
+    border: 5px white solid;
+
+}
