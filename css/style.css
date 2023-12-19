@@ -1,9 +1,62 @@
 
 
-img{
+li > img{
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+}
+
+aside > img{
+    width: 50%;
+    height: calc(100% / 5 );
+    
+    
+
+}
+
+
+aside{
+    position: relative;
+    height: 401px;
+    
+    
+
+}
+
+#button-left{
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+#button-right{
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+
+li > span, li > h2{
+    color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+li > span{
+    top: 350px;
+}
+
+li > h2{
+    top: 300px;
 }
 
 li{
     list-style-type: none;
+    position: relative;
 }
+

@@ -1,12 +1,7 @@
 
 
 const images = [
-    {
-        url: "<img src ='http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg'>",
-        title: 'Svezia',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
-    },
-
+    
     {
         url: "<img src ='https://static1.evcdn.net/images/reduction/1513757_w-1920_h-1080_q-70_m-crop.jpg'>",
         title: '  Perù',
@@ -34,9 +29,13 @@ const foto = document.getElementById('foto')
 
 
 
+
+
 for (let i = 0; i < images.length; i++){
 
-    foto.innerHTML += '<li class ="d-none">'+ '<h2>' + images[i].title + '</h2>'+'<span>' + images[i].description + '</span>'+'<span>' + images[i].url + '</span>'+'</li>';
+    
+
+    foto.innerHTML += '<li class ="d-none">'+ '<h2>' + images[i].title + '</h2>'+'<span>' + images[i].description + '</span>'+ images[i].url +'</li>';
     
     
     
@@ -78,6 +77,8 @@ rightButton.addEventListener('click', function () {
         
         
     }
+    
+
 
 
 
