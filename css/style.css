@@ -9,13 +9,16 @@ li > img{
 }
 
 aside > img{
-    width: 50%;
+    width: 100%;
     height: calc(100% / 5 );
     
     
 
 }
 
+button{
+    width: 100%;
+}
 
 aside{
     position: relative;
@@ -27,24 +30,27 @@ aside{
 
 .fake-button{
     position: absolute;
-    z-index: 1;
-    left: 25%;
-    transform: translateX(-50%);
+    z-index: -1;
+    right: 0;
+    height: calc(100% / 5 );
+
 }
 
 #button-right{
     position: absolute;
     z-index: 1;
-    left: 25%;
-    transform: translateX(-50%);
-    bottom: 0px;
-}
-
-#special-button:hover{
-    border: 5px white solid;
+    right: 0;
+    height: calc(100% / 5 );
+    z-index: -1;
     
 }
 
+
+#special-button:hover{
+    border: 5px white solid;
+    opacity: 0.5;
+
+}
 
 li > span, li > h2{
     color: #ffffff;
@@ -74,5 +80,7 @@ li{
 
 .img-1:hover{
     border: 5px white solid;
+    opacity: 0.5;
 
 }
+
